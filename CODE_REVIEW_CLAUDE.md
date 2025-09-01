@@ -10,11 +10,11 @@ This is solid scientific Python code that demonstrates good understanding of the
 - **Excellent scientific knowledge**: Proper implementation of ADEPT and CUSUM algorithms with mathematical rigor
 - **Comprehensive feature set**: Full pipeline from raw data to structured output with multiple analysis methods
 - **Parameter handling**: Thoughtful configuration system in `main.py` with sensible defaults and clear documentation
-- **Robust fallbacks**: Good error handling with graceful degradation (e.g., ADEPT.py:403-426 fallback to 2-state model)
+- **Robust fallbacks**: Good error handling with graceful degradation (e.g., [ADEPT.py:403-426](ADEPT.py#L403-L426) fallback to 2-state model)
 
 ### 🔧 Technical Competence  
 - **NumPy/SciPy proficiency**: Efficient use of scientific libraries throughout
-- **Numerical stability**: Good handling of edge cases (e.g., Data_Load_Preprocessing.py:34-36 Nyquist frequency checks)
+- **Numerical stability**: Good handling of edge cases (e.g., [Data_Load_Preprocessing.py:34-36](Data_Load_Preprocessing.py#L34-L36) Nyquist frequency checks)
 - **Modular design**: Clear separation of concerns across modules
 - **Interactive tools**: Sophisticated matplotlib-based interactive analysis tools
 
