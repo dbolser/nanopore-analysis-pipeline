@@ -173,7 +173,7 @@ def plot_cusum_analysis(data_normalised, event_dict, ax=None):
 
     ax.set_xlabel('Time (s)')
     ax.set_ylabel('Normalised Current')
-    ax.set_title(f"Event Analysis (CUSUM)") # Title set externally for specific event
+    ax.set_title("Event Analysis (CUSUM)") # Title set externally for specific event
 
     # Clean up legend
     handles, labels = ax.get_legend_handles_labels()
@@ -245,7 +245,7 @@ def plot_adept_fit(data_normalised, event_dict, ax=None, debug=False):
 
     ax.set_xlabel('Time (s)')
     ax.set_ylabel('Normalised Current')
-    ax.set_title(f"Event Analysis (ADEPT)")
+    ax.set_title("Event Analysis (ADEPT)")
 
     handles, labels = ax.get_legend_handles_labels()
     by_label = dict(zip(labels, handles))
@@ -576,7 +576,7 @@ def interactive_event_plotter(data_normalised, event_params):
         print("No analyzed events to plot.")
         return
 
-    print(f"\n--- Interactive Event Analysis ---")
+    print("\n--- Interactive Event Analysis ---")
     print(f"Total analyzed events: {len(event_params)}")
     adept_count = sum(1 for e in event_params if e.get('analysis_method') == 'ADEPT')
     cusum_count = sum(1 for e in event_params if e.get('analysis_method') == 'CUSUM')
@@ -586,7 +586,7 @@ def interactive_event_plotter(data_normalised, event_params):
     cusum_levels = [e.get('num_levels', 0) for e in event_params if e.get('analysis_method') == 'CUSUM']
     cusum_subpeaks = [e.get('num_subpeaks', 0) for e in event_params if e.get('analysis_method') == 'CUSUM']
     if cusum_count > 0:
-        print(f"CUSUM Event Stats:")
+        print("CUSUM Event Stats:")
         print(f"  Avg Levels: {np.mean(cusum_levels):.1f} ± {np.std(cusum_levels):.1f}")
         print(f"  Avg Subpeaks: {np.mean(cusum_subpeaks):.1f} ± {np.std(cusum_subpeaks):.1f}")
         print(f"  Events w/ Subpeaks: {sum(1 for x in cusum_subpeaks if x > 0)}")

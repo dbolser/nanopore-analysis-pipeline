@@ -164,7 +164,7 @@ def classify_events(data, event_boundaries, noise_std, noise_mean, sample_rate,
         reasons.append(f"SNR: {snr:.2f} (Thresh: {snr_threshold})")
         if snr < snr_threshold:
             if current_decision_is_cusum: # If previous rules decided CUSUM
-                reasons.append(f"Low SNR -> Override to ADEPT")
+                reasons.append("Low SNR -> Override to ADEPT")
                 current_decision_is_cusum = False
 
         # 5. Absolute override for very short events (must be ADEPT)
