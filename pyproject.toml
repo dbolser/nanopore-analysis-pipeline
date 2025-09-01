@@ -1,0 +1,17 @@
+[project]
+name = "nanopore-analysis-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.3.2",
+    "pyabf>=2.3.8",
+    "scipy>=1.16.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "ruff>=0.12.11",
+]
