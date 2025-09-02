@@ -16,6 +16,13 @@ The project is structured into modular components to ensure clarity and maintain
 * `CUSUM.py`: Implements the CUSUM algorithm to detect discrete state changes and sub-peaks within complex, multi-level events.
 * `Visualisation_Output.py`: Manages the output, including generating plots for quality control and saving all extracted event parameters to a structured .csv file for downstream analysis.
 
+## Algorithm Documentation
+
+For detailed information about the core algorithms used in this pipeline:
+
+* **[ADEPT Algorithm](ADEPT.md)**: Non-linear curve fitting for short translocation events using multistate exponential models. Ideal for pulse-like events that don't reach steady state.
+* **[CUSUM Algorithm](CUSUM.md)**: Statistical change-point detection for complex multi-level events. Uses cumulative sum statistics to identify discrete state transitions and sub-peaks.
+
 ## Key Features & Technical Highlights
 
 * End-to-End Automation: The pipeline fully automates the analysis of raw signal data into a final, quantified results table.
