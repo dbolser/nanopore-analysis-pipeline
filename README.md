@@ -22,3 +22,12 @@ The project is structured into modular components to ensure clarity and maintain
 * Algorithmic Depth: Implements both established (ADEPT) and statistical change-point (CUSUM) algorithms to handle diverse event types, showcasing the ability to translate complex scientific methods into reliable code.
 * Production-Ready Output: The save_event_params_csv function demonstrates a focus on producing clean, well-structured, and machine-readable data suitable for large-scale studies and machine learning models.
 * Modularity & Reusability: Each step of the analysis is encapsulated in its own module and functions, following good software engineering principles.
+
+## Running Tests
+
+This project uses `pytest` for its unit tests. After installing the dependencies, run the tests with coverage:
+
+```
+pip install pytest pytest-cov
+pytest --cov
+```
